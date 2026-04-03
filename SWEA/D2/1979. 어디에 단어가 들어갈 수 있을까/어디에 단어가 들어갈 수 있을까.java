@@ -1,27 +1,27 @@
 import java.util.Scanner;
 import java.io.FileInputStream;
-
+ 
 class Solution {
-
+ 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int T;
         T = sc.nextInt();
-
+ 
         for (int tc = 1; tc <= T; tc++) {
             int N = sc.nextInt();
             int K = sc.nextInt();
             int[][] puzzle = new int[N][N];
-
+ 
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     int e = sc.nextInt();
                     puzzle[i][j] = e;
                 }
             }
-
+ 
             int answer = 0;
-
+ 
             for (int y = 0; y < N; y++) {
                 for (int x = 0; x < N; x++) {
                     if (puzzle[y][x] == 1) {
